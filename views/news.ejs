@@ -1,0 +1,54 @@
+<%- include ('./header') %> 
+
+<h1>Covid News</h1>
+
+<div class="row">
+    <div class="col m3 s6">
+        <form action="/news/vaccine" method="GET">
+            <button><a class="waves-effect waves-light btn-small orange">Vaccine</a></button>
+        </form>
+    </div>
+    <div class="col m3 s6">
+        <form action="/news/Lockdown" method="GET">
+            <button><a class="waves-effect waves-light btn-small orange">Lockdown</a></button>
+        </form>
+    </div>
+    <div class="col m3 s6">
+        <form action="/news/Economy" method="GET">
+            <button><a class="waves-effect waves-light btn-small orange">Economy</a></button>
+        </form>
+    </div>
+    <div class="col m3 s6">
+        <form action="/news/Social Distancing" method="GET">
+            <button><a class="waves-effect waves-light btn-small orange">Social Distancing</a></button>
+        </form>
+    </div>
+</div>
+
+
+<div class="row">
+    <% if(articles)
+        {
+            articles.forEach(function(article)
+            {%>
+                <div class="col s12 m6">
+                    <div class="card"><a href="<%= article.url %>">
+                    <div class="card-image">
+                        <img src="<%= article.urlToImage %>">
+                        <span class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                        <p><%=  article.title %></p>
+                    </div>
+                    <div class="card-action">
+                        <p><%= article.author %></p>
+                    </div>
+                    </div></a>
+                </div>
+            <%})
+        }
+    %>
+  </div>
+
+
+<%- include ('./footer') %> 

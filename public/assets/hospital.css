@@ -1,0 +1,105 @@
+#map
+{
+    width: 100%;
+    height: 80vh;
+}
+
+#hero-image
+{
+    width: 100%;
+    height: 50vh;
+}
+
+.image1
+{
+    width: 90%;
+    height: 600px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.field
+{
+    width: 60%;;
+}
+
+.auth-form
+{
+    margin-left: 20vw;
+}
+
+
+
+.auth-form
+{
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 30px 20px;
+    width: 60%;
+}
+
+.auth-form div
+{
+    margin-left: 10vw;
+}
+
+
+.auth-form form div label
+{
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    color: rgb(86, 86, 92);
+}
+
+.auth-form form div input
+{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.submit
+{
+    border: 0;
+    padding: 0;
+}
+
+h2
+{
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.submit button
+{
+    border: none;
+    margin-top: 10px;
+}
+
+h1
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-action p
+{
+    color: black;
+}
+
+.card-content p
+{
+    font-size: 20px;
+}
+
+form button
+{
+    border: none;
+}
