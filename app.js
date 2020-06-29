@@ -3,6 +3,7 @@ const express               = require("express");             //To use express.j
       bodyParser            = require("body-parser");
       mongoose              = require("mongoose"); 
       User                  = require("./models/user");
+      path                  = require("path");
 
 var app = express();
 
@@ -72,6 +73,13 @@ app.post("/contact", function(req,res)
             res.redirect("/")
         }
     })
+})
+
+app.get("/download",function(req,res)
+{
+    var file = req.params.file;
+    var filePath = path.join('./files', 'help.pdf');
+    res.download(filePath, file);
 })
 
 //Listening to server
