@@ -7,6 +7,8 @@ const express               = require("express");             //To use express.j
 
 var app = express();
 
+const port = process.env.PORT || 5000
+
 
 //support parsing of application form post data
 app.use(bodyParser.urlencoded({
@@ -26,7 +28,7 @@ mongoose.set('useUnifiedTopology', true);
 
 //Connecting to Database
 var url = process.env.DATABASEURL || "mongodb://localhost/Covid-Help"
-mongoose.connect("mongodb://localhost/Covid-Help");
+mongoose.connect(url);
 
 
 app.get("/",function(req,res)
@@ -83,7 +85,7 @@ app.get("/download",function(req,res)
 })
 
 //Listening to server
-app.listen(5000,function()  //replace process.env.PORT, process.env.IP with 5000 if running in local
+app.listen(port ,function()  //replace process.env.PORT, process.env.IP with 5000 if running in local
 {
     console.log("Serving Covid-Help on port 5000");
 })
