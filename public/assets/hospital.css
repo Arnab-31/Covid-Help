@@ -18,6 +18,14 @@
     margin-top: 20px;
 }
 
+.image2
+{
+    width: 90%;
+    height: 600px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
 .field
 {
     width: 60%;;
@@ -103,3 +111,23 @@ form button
 {
     border: none;
 }
+
+
+@media screen and (max-width: 600px)
+{
+    #hero-image
+    {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .image1
+    {
+    width: 90%;
+    height: 400px;
+    margin-left: 25px;
+    margin-top: 20px;
+    }
+}
+
+
